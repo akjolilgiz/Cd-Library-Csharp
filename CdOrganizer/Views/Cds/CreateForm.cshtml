@@ -1,0 +1,10 @@
+<h1>CD List</h1>
+<h3>Add a new CD:</h3>
+<form action='/cds' method='post'>
+  <input id='libraryId' name='libraryId' type='hidden' value='@Model.GetId()'>
+  <label for='title'>CD Title</label>
+  <input id='title' name='title' type='text'>
+  <label for='artist'>Artist</label>
+  <input id='artist' name='artist' type='text'>
+  <button type='submit'>Add CD</button>
+</form>
